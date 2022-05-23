@@ -8,8 +8,7 @@ git clone https://github.com/Stars-Chan/UAVFVM.git
 cd UAVFVM
 ```
 ## Preprocessing
-Download image: [uavfvm_images.zip 提取码：uavf ](https://pan.baidu.com/s/1JbFeu8XwJFy7Syy60rRDXg )
-
+Download images: [UAVFVM_images.zip 提取码：0523 ](https://pan.baidu.com/s/1gs0tT75AGMAAn_e00C3aFw)
 
 ## Run
 
