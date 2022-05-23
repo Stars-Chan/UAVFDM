@@ -20,12 +20,16 @@ def run(imgpath):
         cv2.circle(image, (i[0], i[1]), i[2], (0, 0, 255), 3)
         # 绘制圆心（绿色）
         cv2.circle(image, (i[0], i[1]), 2, (0, 255,0), 3)
-        print("孔径测量结果（pixel）：",i[2]*2)
+        # print("孔径测量结果（pixel）：",i[2]*2)
+        str_result = "result: " + str(i[2]*2/39.231)
+        #在图片上添加文字信息
+        cv2.putText(image,str_result, (10,30), cv2.FONT_HERSHEY_SIMPLEX, 0.7,(255,0,0), 1, cv2.LINE_AA)
     show_image(image)
+    cv2.imwrite('./results/aperture/GA00000010.bmp', image)
 
 def parse_opt():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--imgpath', type=str, default= './image/GA00000001.bmp', help='image path')
+    parser.add_argument('--imgpath', type=str, default= './images/GA00000010.bmp', help='image path')
     opt = parser.parse_args()
     return opt
 
