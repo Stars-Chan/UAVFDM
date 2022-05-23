@@ -15,8 +15,8 @@ Download images: [UAVFVM_images.zip 提取码：0523 ](https://pan.baidu.com/s/1
 
 ```
 python aperture.py --imgpath 'path to image' 
-python diameter.py --imgpath 'path to image' 
-python major_diameter.py --imgpath 'path to image' 
+python rod_diameter.py --imgpath 'path to image' 
+python thread_diameter.py --imgpath 'path to image' 
 ```
 
 ## Contact
